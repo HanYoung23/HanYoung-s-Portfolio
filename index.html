@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HanYoung's Portfolio</title>
+    <meta name="author" content="HanYoung" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <!--font-family: 'Sansita Swashed', cursive;-->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="#"><img id="myLogo" src="imgs/favicon.png" alt="logo" /></a>
+        <a href="#">HanYoung</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+
+      <!-- Toggle Button -->
+      <button class="navbar__toggle-btn"><i class="fas fa-hamburger"></i></button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img id="profilePhoto" src="imgs/profilePhoto.jpg" alt="profile photo" class="home__avatar" />
+      <h1 class="home__title">Welcome to My Portfolio</h1>
+      <h2 class="home__description">
+        A Passionate Software Engineer, who has hardware engineering experience
+      </h2>
+      <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+        pariatur dolorum eum dolore rem veniam iusto rerum consectetur. Eos
+        reprehenderit aliquam earum iste impedit quasi. Doloribus soluta quis
+        minima dolorum.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML</h2>
+          <div class="major__description">excellent</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">CSS</h2>
+          <div class="major__description">great</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <div class="major__description">pretty good</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h2 class="major__title">React</h2>
+          <div class="major__description">i'm working on it</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img id="nemkoLogo" src="imgs/nemkoLogo.png" alt="nemko__logo" class="job__logo" />
+          <div class="job__description">
+          <p class="job__name">Safety Engineer-IT/AV</p>
+          <p class="job__period">2017.12.26 - 2020.08.13</p>
+        </div></div>
+        <div class="job"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>99%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 99%;"></div>
+            </div>
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+            <div class="skill__description">
+              <span>React</span>
+              <span>10%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 10%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li>Git</li>
+              <li>Stack Overflow</li>
+              <li>MDN</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section section section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn" data-filter="*">
+          All
+          <span class="category__count">6</span>
+        </button>
+        <button class="category__btn" data-filter="javascript">
+          JavaScript
+          <span class="category__count">5</span>
+        </button>
+        <button class="category__btn" data-filter="react">
+          React(preparing..)
+          <span class="category__count">1</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="https://github.com/HanYoung23/Habbit-Tracker-react.git" class="project" data-type="react">
+          <img class="project__img" src="imgs/ReactLogo.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Preparing...</h3>
+          </div>
+        </a>
+        <a href="https://github.com/HanYoung23/Sliding-Puzzle.git" class="project" target="blank" data-type="javascript">
+          <img class="project__img" src="imgs/slidingpuzzle.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Github readme. <i class="fas fa-external-link-alt"></i></h3>
+          </div>
+        </a>
+        <a href="https://github.com/HanYoung23/CarrotClickGame.git" class="project" target="blank"
+        data-type="javascript">
+          <img class="project__img" src="imgs/carrotclickgame.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Github readme. <i class="fas fa-external-link-alt"></i></h3>
+          </div>
+        </a>
+          <a href="https://github.com/HanYoung23/ShoppingMallApp.git" class="project" target="blank" data-type="javascript">
+          <img class="project__img" src="imgs/shoppingMall.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Github readme. <i class="fas fa-external-link-alt"></i></h3>
+          </div>
+        </a>
+          <a href="https://github.com/HanYoung23/ShoppingListApp.git" class="project" target="blank" data-type="javascript">
+          <img class="project__img" src="imgs/shoppingListApp.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Github readme. <i class="fas fa-external-link-alt"></i></h3>
+          </div>
+        </a>
+          <a href="https://github.com/HanYoung23/Responsive-Navbar.git" class="project" target="blank" data-type="javascript">
+          <img class="project__img" src="imgs/Responsive Navbar.png" alt="projectImg">
+          <div class="project__description">
+            <h3>Github readme. <i class="fas fa-external-link-alt"></i></h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">contact me</h1>
+      <h2 class="contact__email">dlgksdud23@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/HanYoung23" target="_blank">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </div>
+      <h4 class="contact__right">
+        <img id="myLogoFooter" src="imgs/favicon.png" alt="logo" /> HanYoung's Portfolio, in 2020
+      </h4>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
