@@ -200,6 +200,11 @@ p {
 }
 
 /* About */
+
+.yellow {
+  color: var(--color-orange);
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -238,6 +243,10 @@ p {
 
 #nemkoLogo {
   width: 100px;
+}
+
+#certificateLogo {
+  width: 60px;
 }
 
 .job__description {
